@@ -1,10 +1,10 @@
 import { PostService } from "./services/DIP";
-import { LocalDataBaseService } from "./DIP-C";
+import { LocalFakeDataBaseService } from "./DIP-C";
 
 // Main
 (async () => {
 
-    const postService = new PostService(new LocalDataBaseService());
+    const postService = new PostService(new LocalFakeDataBaseService());
 
     const posts = await postService.getPosts();
 

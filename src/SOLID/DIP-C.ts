@@ -1,7 +1,7 @@
 import { Post } from "./DIP-B";
 import { PostProvider } from "./services/DIP";
 
-export class LocalDataBaseService implements PostProvider {
+export class LocalFakeDataBaseService implements PostProvider {
 
     async getPosts(): Promise<Post[]> {
         return [

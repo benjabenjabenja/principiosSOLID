@@ -1,6 +1,6 @@
 // HTTP
 import { ExternalApiService, LocalDataBaseService } from './http/dip';
-import { LocalDataBaseService as LocalDataBaseService2 } from './DIP-C';
+import { LocalFakeDataBaseService as LocalDataBaseService2 } from './DIP-C';
 // SERVICES
 import { PostService } from './services/DIP';
 
@@ -103,9 +103,9 @@ import { PostService } from './services/DIP';
 
     const posts3 = await postService3.getPosts();
 
-    console.log("DIP: ",{ posts })
+    console.log("DIP local: ",{ posts })
     console.log("DIP external: ",{ posts2 })
-    console.log("DIP local: ",{ posts3 })
+    console.log("DIP fake: ",{ posts3 })
 })();
 
 
