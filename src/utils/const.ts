@@ -119,7 +119,32 @@ export const INPUT_ELEMENT = {
 }
 
 
+// SOLID - 1 - SINGLE RESPONSIBILITY PRINCIPLE
+export interface Product { 
+    id:   number;
+    name: string;
+}
+export type Template = 'toClients' | 'toAdmins';
+export type EmailList = string[];
 
+export const PRODUCT: Product = {
+    id: 10,
+    name: 'OLED TV'
+}
+export const EMAIL_LIST: EmailList = ['test@test.com', 'admin@test.com'];
+export const TEMPLATE: Template = 'toClients';
+export const EMAIL_DEFAULT: string = 'test@test.com';
 
+// SOLID - 2 - OPEN/CLOSED PRINCIPLE
+export const API_URL = 'https://jsonplaceholder.typicode.com';
 
+const baseUrl = import.meta.env.VITE_BASE_URL || API_URL;
+
+export const URLS = {
+    TODO: `${baseUrl}/todos/`,
+    POSTS: `${baseUrl}/posts`,
+    PHOTOS: `${baseUrl}/photos`
+}
+
+// SOLID - 3 - Liskov Substitution Principle
 

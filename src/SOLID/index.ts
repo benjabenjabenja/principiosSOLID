@@ -1,3 +1,9 @@
+// import './SRP';
+// import './OCP';
+// import './LSP';
+// import './ISP';
+// import './DIP-A';
+import './DIP';
 // ================================
 // SOLID
 // ================================

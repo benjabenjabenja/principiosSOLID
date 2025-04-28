@@ -2,8 +2,8 @@ import './style.css'
 //import './clean-code'; // index
 //import './clean-code/clases-typescript/tarea-clases';
 // import './code-smells/Singleton';
-import './code-smells/bajo-acoplamiento';
-
+//import './code-smells/bajo-acoplamiento';
+import './SOLID';
 const app = document.querySelector<HTMLDivElement>('#app')!
 
 app.innerHTML = `
